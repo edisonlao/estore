@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="bsbuyer" extends="mydefault" namespace="/bsbuyer">
+	<default-class-ref class="com.entor.action.BsBuyerAction"></default-class-ref>
+		
+		<action name="add" method="add">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+		<action name="delete" method="delete">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+		<action name="update" method="update">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+				<param name="id">${id}</param>
+			</result>
+		</action>
+		
+		<action name="queryAll" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/buyer/information/index1.jsp</param>
+			</result>
+		</action>
+		<action name="queryAll2" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/buyer/information/admin.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryById" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/buyer/information/updateindex1.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryAddress" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/buyer/information/address.jsp</param>
+			</result>
+		</action>
+		
+		<action name="deleteAll" method="deleteAll">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+		<action name="queryByPage" method="queryByPage">
+			<result type="dispatcher">
+				<param name="location">/index/bsbuyer/information/index1.jsp</param>
+			</result>
+		</action>
+		
+
+	</package>
+</struts>

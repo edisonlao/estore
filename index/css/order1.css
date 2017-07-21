@@ -1,0 +1,125 @@
+
+td span{	
+	color: #fb7000;
+	font-size: 20px;
+}
+
+td div b:after{ 
+content:"..."; 
+}
+td,td b{
+	height:50px;
+	width:200px;
+	text-align: center;
+}
+
+li{
+	color: #878787;
+	font-weight: lighter;
+	padding-top:5px;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+td input{
+	background-color: #ffffff;
+	width: 100px;
+	height: 25px;
+	border: 1px;
+	border-style:solid;
+	border-color:#ff4400;
+	color: #ff4400;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+}
+
+td input:HOVER{
+	background-color: #ff4400;
+	width: 100px;
+	height: 25px;
+	border: 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+}
+
+td b input{
+	background-color: #ffffff;
+	width: 90px;
+	height: 25px;
+	border: 1px;
+	border-style:solid;
+	border-color:#ff4400;
+	color: #ff4400;
+	font-size: 15px;
+	font-weight: lighter;
+	float:left;
+	margin: 5px;
+}
+
+td b input:HOVER{
+	background-color: #ff4400;
+	width: 90px;
+	height: 25px;
+	border: 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+	float:left;
+}
+
+td span b input{
+	background-color: #ffffff;
+	width: 100px;
+	height: 25px;
+	border: 1px;
+	border-style:solid;
+	border-color:#ff0000;
+	color: #ff0000;
+	font-size: 15px;
+	font-weight: lighter;
+	float:left;
+	margin: 5px;
+}
+
+td span b input:HOVER{
+	background-color: #ff0000;
+	width: 100px;
+	height: 25px;
+	border: 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+	float:left;
+}
+
+td span input{
+	background-color: #ffffff;
+	width: 90px;
+	height: 25px;
+	border: 1px;
+	border-style:solid;
+	border-color:#00a2ff;
+	color: #00a2ff;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+}
+
+td span input:HOVER{
+	background-color: #00a2ff;
+	width: 90px;
+	height: 25px;
+	border: 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 5px;
+}

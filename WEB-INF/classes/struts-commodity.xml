@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="bscommodity" extends="mydefault" namespace="/bscommodity">
+	<default-class-ref class="com.entor.action.BsCommodityAction"></default-class-ref>
+		
+		<action name="add" method="add">
+			<result type="dispatcher">
+			<param name="location">/index/commodity/information/addsuccess.jsp</param>
+			</result>
+		</action>
+		
+		<action name="delete" method="delete">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+		<action name="update" method="update">
+			<result type="dispatcher">
+			<!--
+				<param name="actionName">queryCommodity</param>
+				<param name="sid">${sid}</param>
+			-->
+			<param name="location">/index/commodity/information/updatesuccess.jsp</param>
+			</result>
+		</action>
+		
+		<action name="update2" method="update2">
+			<result type="dispatcher">
+			<!--
+				<param name="actionName">queryCommodity</param>
+				<param name="sid">${sid}</param>
+			-->
+			<param name="location">/index/commodity/information/updatesuccess.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryAll" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/index1.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryAll2" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/index2.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryCommodity" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/seller/information/commodity.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryCommodity2" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/seller/information/commodity2.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryById" method="queryById">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/updateindex1.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryById2" method="queryById">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/updateindex3.jsp</param>
+			</result>
+		</action>
+		
+		<action name="deleteAll" method="deleteAll">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+	
+		<action name="queryByPage" method="queryByPage">
+			
+		</action>
+	
+	
+	</package>
+</struts>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="login" extends="mydefault" namespace="/">
+	<default-class-ref class="com.entor.action.LoginAction"></default-class-ref>
+		
+			<action name="login" class="com.entor.action.LoginAction" method="login">
+			<result name="admin" type="dispatcher">
+				<param name="location">/index/admin/index1.jsp</param>
+				</result>
+			<result name="buyer" type="dispatcher">
+				<param name="location">/index/buyer/index2.jsp</param>
+			</result>
+			<result name="seller" type="dispatcher">
+				<param name="location">/index/seller/index3.jsp</param>
+			</result>
+			<result name="error" type="dispatcher">
+				<param name="location">/index/Login.jsp</param>
+			</result>
+		
+		</action>
+		<action name="logout" class="com.entor.action.LoginAction" method="logout">
+		<result></result>
+		</action>
+	</package>
+</struts>

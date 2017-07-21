@@ -1,0 +1,96 @@
+
+table{
+	width:100%;
+	border:1px;
+	height: 50px;
+	padding-top: 5px;
+}
+td span{
+	
+	color: #fb7000;
+	font-size: 20px;
+}
+
+td div b:after{ 
+content:"..."; 
+}
+td{
+	height:150px;
+	width:300px;
+	padding-left: 20px;
+}
+#title1{
+	height:20px;
+	width: 300px;	
+	float: left;
+	
+}
+#title2{
+	height:20px;
+	width: 200px;	
+	float: left;
+	
+}
+#title3{
+	height:20px;
+	width: 190px;	
+	float: left;
+	text-align: right;
+	
+}
+#title4{
+	height:20px;
+	width: 200px;	
+	float: left;
+	
+}
+#title5{
+	height:20px;
+	width: 100px;	
+	float: left;
+	text-align: center;
+}
+li{
+	color: #878787;
+	font-weight: lighter;
+	padding-top:5px;
+	list-style-type: none;
+}
+
+tr th{
+	width: 100%;
+	float: right;
+	float: left;
+	position: absolute;
+	border-bottom:1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+td input{
+	background-color: #ffffff;
+	width: 100px;
+	height: 25px;
+	border: 1px;
+	border-style:solid;
+	border-color:#45a9d8;
+	color: #45a9d8;
+	font-size: 15px;
+	font-weight: lighter;
+	float: left;
+}
+
+td input:HOVER{
+	background-color: #45a9d8;
+	width: 100px;
+	height: 25px;
+	border: 0px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: lighter;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="chuan" extends="mydefault" namespace="/">
+
+		<action name="chuanall" class="com.entor.action.ChuanAction" method="chuan">
+			<result  type="dispatcher">
+				<param name="location">/index/buyer/index2.jsp</param>
+			</result>
+		</action>
+		<action name="chuanmain" class="com.entor.action.ChuanAction" method="chuanmain">
+			<result  type="dispatcher">
+				<param name="location">/index/index2.jsp</param>
+			</result>
+		</action>
+		<action name="chuanall2" class="com.entor.action.ChuanAction" method="chuan2">
+			<result  type="dispatcher">
+				<param name="location">/index/seller/index3.jsp</param>
+			</result>
+		</action>
+		<action name="chuanmain2" class="com.entor.action.ChuanAction" method="chuanmain2">
+			<result  type="dispatcher">
+				<param name="location">/index/index3.jsp</param>
+			</result>
+		</action>
+		<action name="chuanmain3" class="com.entor.action.ChuanAction" method="chuanmain3">
+			<result  type="dispatcher">
+				<param name="location">/index/index.jsp</param>
+			</result>
+		</action>
+		<action name="chuancommodity" class="com.entor.action.ChuanAction" method="chuancommodity">
+			<result  type="dispatcher">
+				<param name="location">/index/commodity/information/addcommodity.jsp</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

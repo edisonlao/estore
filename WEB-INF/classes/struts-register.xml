@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="register" extends="mydefault" namespace="/">
+	<default-class-ref class="com.entor.action.LoginAction"></default-class-ref>
+		
+		<action name="register" class="com.entor.action.RegisterAction" method="register">
+			<result type="dispatcher">
+				<param name="location">/index/index.jsp</param>
+				</result>	
+		</action>
+	
+	</package>
+</struts>

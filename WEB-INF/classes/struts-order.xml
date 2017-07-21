@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	
+	<package name="bsorder" extends="mydefault" namespace="/bsorder">
+	<default-class-ref class="com.entor.action.BsOrderAction"></default-class-ref>
+		
+		<action name="add" method="add">
+			<result type="dispatcher">
+			<param name="location">/index/commodity/information/addsuccess.jsp</param>
+			</result>
+		</action>
+		
+		<action name="delete" method="delete">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+		<action name="update" method="update">
+			<result type="dispatcher">
+			<param name="location">/index/commodity/information/updatesuccess.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryAll" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/index1.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryAll2" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/index2.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryOrder1" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/buyer/information/order.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryOrder2" method="queryAll">
+			<result type="dispatcher">
+				<param name="location">/index/seller/information/order.jsp</param>
+			</result>
+		</action>
+		
+		<action name="queryById" method="queryById">
+			<result type="dispatcher">
+				<param name="location">/index/commodity/information/updateindex1.jsp</param>
+			</result>
+		</action>
+		
+		<action name="deleteAll" method="deleteAll">
+			<result type="redirectAction">
+				<param name="actionName">queryAll</param>
+			</result>
+		</action>
+		
+	
+	
+	</package>
+</struts>
